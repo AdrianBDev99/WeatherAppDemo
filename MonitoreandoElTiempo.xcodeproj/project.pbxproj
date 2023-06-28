@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,12 @@
 		08701E762A428B0A00401394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08701E742A428B0A00401394 /* Main.storyboard */; };
 		08701E782A428B0D00401394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08701E772A428B0D00401394 /* Assets.xcassets */; };
 		08701E7B2A428B0D00401394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08701E792A428B0D00401394 /* LaunchScreen.storyboard */; };
-		08701E882A428BB100401394 /* ApiTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08701E872A428BB100401394 /* ApiTime.swift */; };
+		08701E882A428BB100401394 /* ApiClimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08701E872A428BB100401394 /* ApiClimate.swift */; };
+		088D9F1A2A4BAFBE00F21D2F /* ExtensionProtocolDateOfClimateOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088D9F192A4BAFBE00F21D2F /* ExtensionProtocolDateOfClimateOutput.swift */; };
+		088D9F1E2A4BB01700F21D2F /* ExtensionCLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088D9F1D2A4BB01700F21D2F /* ExtensionCLLocationManagerDelegate.swift */; };
+		088D9F402A4BBB7A00F21D2F /* WeatherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088D9F3F2A4BBB7A00F21D2F /* WeatherModels.swift */; };
+		088D9F712A4BC54200F21D2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 088D9F702A4BC54200F21D2F /* GoogleService-Info.plist */; };
+		5BCB60E256548D8B3247AB7B /* Pods_MonitoreandoElTiempo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05E3A1EB0F5B5C0094B32D0 /* Pods_MonitoreandoElTiempo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +30,14 @@
 		08701E772A428B0D00401394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08701E7A2A428B0D00401394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08701E7C2A428B0D00401394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08701E872A428BB100401394 /* ApiTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTime.swift; sourceTree = "<group>"; };
+		08701E872A428BB100401394 /* ApiClimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClimate.swift; sourceTree = "<group>"; };
+		088D9F192A4BAFBE00F21D2F /* ExtensionProtocolDateOfClimateOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionProtocolDateOfClimateOutput.swift; sourceTree = "<group>"; };
+		088D9F1D2A4BB01700F21D2F /* ExtensionCLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCLLocationManagerDelegate.swift; sourceTree = "<group>"; };
+		088D9F3F2A4BBB7A00F21D2F /* WeatherModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModels.swift; sourceTree = "<group>"; };
+		088D9F702A4BC54200F21D2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		606C9F3ACDA7BB51DD0C75FE /* Pods-MonitoreandoElTiempo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitoreandoElTiempo.release.xcconfig"; path = "Target Support Files/Pods-MonitoreandoElTiempo/Pods-MonitoreandoElTiempo.release.xcconfig"; sourceTree = "<group>"; };
+		A0FE4AD65D8CC25A3758016A /* Pods-MonitoreandoElTiempo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitoreandoElTiempo.debug.xcconfig"; path = "Target Support Files/Pods-MonitoreandoElTiempo/Pods-MonitoreandoElTiempo.debug.xcconfig"; sourceTree = "<group>"; };
+		C05E3A1EB0F5B5C0094B32D0 /* Pods_MonitoreandoElTiempo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonitoreandoElTiempo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BCB60E256548D8B3247AB7B /* Pods_MonitoreandoElTiempo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,8 @@
 			children = (
 				08701E6D2A428B0A00401394 /* MonitoreandoElTiempo */,
 				08701E6C2A428B0A00401394 /* Products */,
+				1C1E30352BF7333406988054 /* Pods */,
+				C6C791861E2EBCB3F520113A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +73,85 @@
 		08701E6D2A428B0A00401394 /* MonitoreandoElTiempo */ = {
 			isa = PBXGroup;
 			children = (
-				08701E6E2A428B0A00401394 /* AppDelegate.swift */,
-				08701E702A428B0A00401394 /* SceneDelegate.swift */,
-				08701E722A428B0A00401394 /* ViewController.swift */,
-				08701E872A428BB100401394 /* ApiTime.swift */,
-				08701E742A428B0A00401394 /* Main.storyboard */,
+				088D9F702A4BC54200F21D2F /* GoogleService-Info.plist */,
+				088D9F3E2A4BBB6500F21D2F /* Models */,
+				088D9F212A4BB09D00F21D2F /* Controllers */,
+				088D9F182A4BAF3D00F21D2F /* Extensions */,
+				088D9F172A4BAE6100F21D2F /* Network */,
+				088D9F102A4B9C1B00F21D2F /* Views */,
+				088D9F0F2A4B9BE200F21D2F /* Application */,
 				08701E772A428B0D00401394 /* Assets.xcassets */,
 				08701E792A428B0D00401394 /* LaunchScreen.storyboard */,
 				08701E7C2A428B0D00401394 /* Info.plist */,
 			);
 			path = MonitoreandoElTiempo;
+			sourceTree = "<group>";
+		};
+		088D9F0F2A4B9BE200F21D2F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				08701E6E2A428B0A00401394 /* AppDelegate.swift */,
+				08701E702A428B0A00401394 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		088D9F102A4B9C1B00F21D2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08701E742A428B0A00401394 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		088D9F172A4BAE6100F21D2F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				08701E872A428BB100401394 /* ApiClimate.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		088D9F182A4BAF3D00F21D2F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				088D9F192A4BAFBE00F21D2F /* ExtensionProtocolDateOfClimateOutput.swift */,
+				088D9F1D2A4BB01700F21D2F /* ExtensionCLLocationManagerDelegate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		088D9F212A4BB09D00F21D2F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08701E722A428B0A00401394 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		088D9F3E2A4BBB6500F21D2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				088D9F3F2A4BBB7A00F21D2F /* WeatherModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C1E30352BF7333406988054 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0FE4AD65D8CC25A3758016A /* Pods-MonitoreandoElTiempo.debug.xcconfig */,
+				606C9F3ACDA7BB51DD0C75FE /* Pods-MonitoreandoElTiempo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6C791861E2EBCB3F520113A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C05E3A1EB0F5B5C0094B32D0 /* Pods_MonitoreandoElTiempo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08701E7F2A428B0D00401394 /* Build configuration list for PBXNativeTarget "MonitoreandoElTiempo" */;
 			buildPhases = (
+				E4B5E7C0041C399CA44B440B /* [CP] Check Pods Manifest.lock */,
 				08701E672A428B0A00401394 /* Sources */,
 				08701E682A428B0A00401394 /* Frameworks */,
 				08701E692A428B0A00401394 /* Resources */,
+				BF6736EDB6EDFE57A482846C /* [CP] Embed Pods Frameworks */,
+				088D9F602A4BC22600F21D2F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -128,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08701E7B2A428B0D00401394 /* LaunchScreen.storyboard in Resources */,
+				088D9F712A4BC54200F21D2F /* GoogleService-Info.plist in Resources */,
 				08701E782A428B0D00401394 /* Assets.xcassets in Resources */,
 				08701E762A428B0A00401394 /* Main.storyboard in Resources */,
 			);
@@ -135,14 +223,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		088D9F602A4BC22600F21D2F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		BF6736EDB6EDFE57A482846C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonitoreandoElTiempo/Pods-MonitoreandoElTiempo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonitoreandoElTiempo/Pods-MonitoreandoElTiempo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MonitoreandoElTiempo/Pods-MonitoreandoElTiempo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4B5E7C0041C399CA44B440B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonitoreandoElTiempo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		08701E672A428B0A00401394 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				088D9F1E2A4BB01700F21D2F /* ExtensionCLLocationManagerDelegate.swift in Sources */,
+				088D9F402A4BBB7A00F21D2F /* WeatherModels.swift in Sources */,
+				088D9F1A2A4BAFBE00F21D2F /* ExtensionProtocolDateOfClimateOutput.swift in Sources */,
 				08701E732A428B0A00401394 /* ViewController.swift in Sources */,
 				08701E6F2A428B0A00401394 /* AppDelegate.swift in Sources */,
-				08701E882A428BB100401394 /* ApiTime.swift in Sources */,
+				08701E882A428BB100401394 /* ApiClimate.swift in Sources */,
 				08701E712A428B0A00401394 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,10 +439,12 @@
 		};
 		08701E802A428B0D00401394 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0FE4AD65D8CC25A3758016A /* Pods-MonitoreandoElTiempo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = MonitoreandoElTiempo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +459,7 @@
 		};
 		08701E812A428B0D00401394 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 606C9F3ACDA7BB51DD0C75FE /* Pods-MonitoreandoElTiempo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
